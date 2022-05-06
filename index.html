@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="https://cdn.staticfile.org/ionicons/2.0.1/css/ionicons.min.css">
+</head>
+<body>
+    <div class="header" style="background:url(http://p.ananas.chaoxing.com/star3/origin/8dbc96051e7bc028511bb1a5c48bf7d8) no-repeat center;background-size:cover;color:#ffffff">
+        <div class="space-unit">
+            <h3 id="siteName" title="西南石油大学">西南石油大学</h3>
+        </div>
+        <div class="nav fr" style="position:relative">
+            <li class="appCode" style="color:#ffffff;display:block">输入邀请码</li>
+            <li class="user">
+                <img src="https://photo.chaoxing.com/p/194279160_80" alt="图片加载失败" class="icon-head">
+                <span>杨涛</span>
+                <i class="icon ion-chevron-down"></i>
+                <div class="user-option" style="display: none;">
+                    <ul>
+                        <li class="li">账户管理</li>
+                        <li class="li">切换单位</li>
+                        <li class="li">退出空间</li>
+                    </ul>
+                </div>
+            </li>
+            <script>
+                var users = document.querySelector('.user');
+                var op = document.querySelector('.user-option');
+                users.onmouseover = function(){
+                    op.style.display = 'block';
+                }
+                users.onmouseout = function(){
+                    op.style.display = 'none';
+                }
+                var lis = document.getElementsByClassName('li');
+                console.log(lis.length);
+                for(var i = 0; i < lis.length ; i++){
+                    lis[i].onmouseover = function(){
+                        this.style.backgroundColor = 'white';
+                        this.style.color = 'black';
+                    }
+                    lis[i].onmouseout = function(){
+                        this.style.backgroundColor = '';
+                        this.style.color = 'white';
+                    }
+                }
+            </script>
+            
+        </div>
+        
+    </div>
+    <div class="con">
+        <div class="con-left con-left-float" style="background: #4D58B5; color: #ffffff;">
+            <div class="user-block">
+                <img class="head-img" src="http://photo.chaoxing.com/p/194279160_80" alt="图片加载失败">
+                <p class="user-name">杨涛</p>
+            </div>
+            <div class="menu">
+                <div id="mCSB1">
+                    <ul>
+                        <li name="课程">
+                            <span class="icon3"></span>
+                            <h5>课程</h5>
+                        </li>
+                        <li name="新版课程">
+                            <span class="icon4"></span>
+                            <h5>新版课程</h5>
+                        </li>
+                        <li name="我的书房">
+                            <span class="icon11"></span>
+                            <h5>我的书房</h5>
+                        </li>
+                        <li name="收件箱">
+                            <span class="icon5"></span>
+                            <h5>收件箱</h5>
+                        </li>
+                        <li name="专题创作">
+                            <span class="icon6"></span>
+                            <h5>专题创作</h5>
+                        </li>
+                        <li name="听课评课">
+                            <span class="icon12"></span>
+                            <h5>听课评课</h5>
+                        </li>
+                        <li name="小组">
+                            <span class="icon7"></span>
+                            <h5>小组</h5>
+                        </li>
+                        <li name="PBL">
+                            <span class="icon8"></span>
+                            <h5>PBL</h5>
+                        </li>
+                        <li name="笔记">
+                            <span class="icon9"></span>
+                            <h5>笔记</h5>
+                        </li>
+                        <li name="云盘">
+                            <span class="icon10"></span>
+                            <h5>云盘</h5>
+                        </li>
+                        
+                        <li name="个人直播间">
+                            <span class="icon13"></span>
+                            <h5>个人直播间</h5>
+                        </li>
+                        <li name="新版课程">
+                            <span class="icon4"></span>
+                            <h5>新版课程</h5>
+                        </li>
+                    </ul>
+                </div>
+            </div>    
+        </div>
+        <div class="content">
+            <div class="main" style="min-height: 1826px;">
+                <div class="course-tab">
+                    <div class="tab-item1 current">
+                        我学的课
+                    </div>
+                    <div class="tab-item2">
+                        我教的课
+                    </div>
+                    <a href="#" class="experience">体验新版</a>
+                </div>
+                <div class="course-list minheight700">
+                    <div class="btn_group">
+                        <a href="http://swpu.benke.chaoxing.com/schoolcourse/schoolcourselist.html?type=5" class="jb_btn jb_btn_104 fs14" id="addCourse" style="display: inline-block;">
+                            <i class="PIuIcon">
+                                <img src="https://mooc1-2.chaoxing.com/mooc2/images/add.png" alt="加载失败">
+                            </i>
+                            添加课程
+                        </a>
+                        <a href="#" class="addFloder btnBlue btn_104 fs14" id="addFloder">新建文件夹</a>
+                        <div class="fr">
+                            <div class="dataSearch f1">
+                                <input type="text" name value class="dataSearch_input f1" placeholder="搜索" id="searchInput">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courselistArea" id="courselistArea">
+                        <div class="path-box clear"></div>
+                        <ul class="course-list" id="course-list">
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=213686195&clazzid=55907878&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/a597b7c95a3e72dbbdb21f17011ce85f.jpg
+                                        " alt="加载失败" class="img1">
+                                    </a>
+                                    <ul class="handle-list handle1" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img1 = document.querySelector('.img1')
+                                        var hd1 = document.querySelector('.handle1');
+                                        img1.onmouseover = function(){
+                                            hd1.style.display = 'block';
+                                        }
+                                        img1.onmouseout = function(){
+                                            hd1.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=213686195&clazzid=55907878&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="工程认知实践 ||(计科院模块)">
+                                                工程认知实践 ||（计科院模块）
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="徐媛媛">徐媛媛</p>
+                                    <p class="overHidden1">班级：计算机类2021</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=201305727&clazzid=55862912&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/cc4d8f01516a85f9da7ff8729aabac13.jpg
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" id="t" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img2 = document.querySelector('')
+                                        var hd2 = document.querySelector('#t');
+                                        img2.onmouseover = function(){
+                                            hd2.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd2.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=201305727&clazzid=55862912&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="数据结构与算法">
+                                                数据结构与算法
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="伍敏">伍敏</p>
+                                    <p class="overHidden1">班级：2022春季-2106教学班</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=216559213&clazzid=55769923&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/3a7c4e2929905646967168696f78ff01.png
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=216559213&clazzid=55769923&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="石油工程认知">
+                                                石油工程认知
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="敬爽">敬爽</p>
+                                    <p class="overHidden1">班级：7周周天6-9节</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=224360561&clazzid=55704891&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/3b1af7fc680a75f67158ca0544b47363.jpg
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=224360561&clazzid=55704891&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="工程认知实践-机械结构认知">
+                                                工程认知实践-机械结构认知
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="程亮">程亮</p>
+                                    <p class="overHidden1">班级：机械结构7周四-尹</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=223689528&clazzid=54537225&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="	https://p.ananas.chaoxing.com/star3/240_130c/3a7c4e2929905646967168696f78ff01.png
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=223689528&clazzid=54537225&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="电子工艺认知2022春">
+                                                电子工艺认知2022春
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="黄建明">黄建明</p>
+                                    <p class="overHidden1">班级：2022年3月27日</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=219700564&clazzid=53051199&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/e806eecd9918a02038e99b3b5913abf6.png
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=223689528&clazzid=54537225&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="中共党史">
+                                                中共党史
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="南京大学">南京大学</p>
+                                    <p class="line2" title="陈倩晗">陈倩晗</p>
+                                    <p class="overHidden1">班级：中共党史2602-陈倩晗</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=214716992&clazzid=52727191&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="	https://p.ananas.chaoxing.com/star3/240_130c/c4541a15988bb73fa7a8cef5d6200db2.jpg
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=214716992&clazzid=52727191&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="工程认知实践">
+                                                工程认知实践
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="陈倩晗">崔飞</p>
+                                    <p class="overHidden1">班级：2022年春工程认知实践Ⅱ</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=222465181&clazzid=52038694&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/6ac4564c5840ae5b156a7f47c39823ed.jpg
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=222465181&clazzid=52038694&vc=1&cpi=200424340&ismooc2=1" class="color1">
+                                            <span class="course-name overHidden2" title="大学物理与实验">
+                                                大学物理与实验
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="胡士德">胡士德</p>
+                                    <p class="overHidden1">班级：2138地科计科胡士德Ⅱ</p>
+                                </div>
+                            </li>
+                            <li class="course clearfix">
+                                <div class="course-cover">
+                                    <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=200903545&clazzid=52070849&vc=1&cpi=200424340&ismooc2=1">
+                                        <img src="https://p.ananas.chaoxing.com/star3/240_130c/e66153595e67814a14901f52a17d12aa.png
+                                        " alt="加载失败" class="img2">
+                                    </a>
+                                    <ul class="handle-list" style="display: none;">
+                                        <li class="move_to movetobtn">移动到</li>
+                                        <li class="quit-course">退课</li>
+                                    </ul>
+                                    <script>
+                                        var img = document.querySelector('.img2')
+                                        var hd = document.querySelector('.handle-list');
+                                        img.onmouseover = function(){
+                                            hd.style.display = 'block';
+                                        }
+                                        img.onmouseout = function(){
+                                            hd.style.display = 'none';
+                                        }
+                                    </script>
+
+                                </div>
+                                <div class="course-info">
+                                    <h3 class="inlineBlock">
+                                        <a href="https://mooc1-2.chaoxing.com/visit/stucoursemiddle?courseid=200903545&clazzid=52070849&vc=1&cpi=200424340&ismooc2=1"" class="color1">
+                                            <span class="course-name overHidden2" title="离散结构">
+                                                离散结构
+                                            </span>
+                                        </a>
+                                    </h3>
+                                    <p class="margint10 line2" title="西南石油大学">西南石油大学</p>
+                                    <p class="line2" title="黄诚">黄诚</p>
+                                    <p class="overHidden1">班级：计算机类21级-2106  </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
